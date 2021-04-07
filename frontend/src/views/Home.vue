@@ -65,13 +65,13 @@
                     for (let uniqueState of this.itemsByState) {
                         if (uniqueState == profile.state) {
                             stateFound = true;
-                            break;
                         }
                     }
                     if (stateFound == false) {
                         this.itemsByState.push(profile.state);
 
                     }
+                    stateFound = false;
                 }
             },
             async chooseState(state) {
